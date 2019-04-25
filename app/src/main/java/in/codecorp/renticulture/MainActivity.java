@@ -3,6 +3,8 @@ package in.codecorp.renticulture;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,6 +14,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import in.codecorp.renticulture.Fragments.AddFarmerFragment;
+import in.codecorp.renticulture.Fragments.BuyProductFragment;
+import in.codecorp.renticulture.Fragments.HomeFragment;
+import in.codecorp.renticulture.Fragments.ViewFarmerFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -37,6 +44,12 @@ public class MainActivity extends AppCompatActivity
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+
+        Fragment fragment =  new HomeFragment();
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.replace(R.id.content, fragment);
+        ft.addToBackStack(null);
+        ft.commit();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -81,12 +94,32 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+
+            Fragment fragment =  new HomeFragment();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content, fragment);
+            ft.addToBackStack(null);
+            ft.commit();
         } else if (id == R.id.nav_gallery) {
+            Fragment fragment =  new AddFarmerFragment();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content, fragment);
+            ft.addToBackStack(null);
+            ft.commit();
 
         } else if (id == R.id.nav_slideshow) {
+            Fragment fragment =  new ViewFarmerFragment();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content, fragment);
+            ft.addToBackStack(null);
+            ft.commit();
 
         } else if (id == R.id.nav_manage) {
+            Fragment fragment =  new BuyProductFragment();
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.content, fragment);
+            ft.addToBackStack(null);
+            ft.commit();
 
         } else if (id == R.id.nav_share) {
 

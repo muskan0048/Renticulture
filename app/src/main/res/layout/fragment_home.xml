@@ -3,12 +3,94 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.HomeFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical" >
 
+        <ImageView
+            android:id="@+id/banner_slider1"
+            android:layout_width="match_parent"
+            android:layout_height="165dp"
+            android:layout_margin="20sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_marginTop="45sp"
+            android:padding="5sp">
+
+            <ImageView
+                android:layout_width="111dp"
+                android:layout_height="46dp"
+                />
+
+            <TextView
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:padding="5sp"
+                android:text="Add Urban Farmer/ शहरी किसान को जोड़ें"
+                android:textColor="@color/bl"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_marginTop="15sp"
+
+            android:padding="5sp">
+
+            <ImageView
+                android:layout_width="111dp"
+                android:layout_height="46dp"
+                 />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:padding="5sp"
+                android:text="View Urban Farmer/शहरी किसानों की सूची"
+                android:textColor="@color/bl"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5sp"
+            android:layout_marginTop="15sp"
+            android:padding="5sp">
+
+            <ImageView
+                android:layout_width="111dp"
+                android:layout_height="46dp"
+                />
+
+            <TextView
+                android:layout_width="164dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:padding="5sp"
+                android:text="Buy UFO Nursery Products/ यूएफओ नर्सरी उत्पाद खरीदें"
+                android:textColor="@color/bl"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
 </FrameLayout>
