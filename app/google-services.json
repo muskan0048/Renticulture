@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1088318762112",
+    "firebase_url": "https://renticulture.firebaseio.com",
+    "project_id": "renticulture",
+    "storage_bucket": "renticulture.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1088318762112:android:59d25316e67bc8a6",
+        "android_client_info": {
+          "package_name": "in.codecorp.renticulture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1088318762112-phnlb71hs72oq7ds7qbi4iudc2e0unqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.codecorp.renticulture",
+            "certificate_hash": "249af755fb9c9e36b269f71391052c3f821909b0"
+          }
+        },
+        {
+          "client_id": "1088318762112-0acmro5gu8icig4eeqekk5d0p524n6ip.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFuL0rLYkD23bwnJmoIQEtSl6xoy0yFnM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1088318762112-0acmro5gu8icig4eeqekk5d0p524n6ip.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
